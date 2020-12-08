@@ -1,7 +1,7 @@
 library(tidyverse)
 options(scipen = 999)
 
-rules <- read_lines("Day07/Day7Data.txt")
+rules <- read_lines("Day7Data.txt")
 rules <- rules %>% tibble(rules = .)
 
 rules_links <- 
