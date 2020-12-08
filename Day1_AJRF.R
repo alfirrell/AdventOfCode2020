@@ -1,7 +1,7 @@
 library(tidyverse)
 
 ## Part 1: 2 entries which sum to 2020
-raw_vals <- read_csv("Day01/Day1Data.csv", col_types = "i", col_names = "val")
+raw_vals <- read_csv("Day1Data.csv", col_types = "i", col_names = "val")
 raw_vals <- raw_vals$val
 
 expand_grid(val1 = raw_vals,
