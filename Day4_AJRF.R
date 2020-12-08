@@ -2,7 +2,7 @@
 library(tidyverse)
 
 ## Part 1
-lines <- read_lines("Day04/Day4Data.txt")
+lines <- read_lines("Day4Data.txt")
 
 passports <- 
   tibble(fields = lines) %>% 
