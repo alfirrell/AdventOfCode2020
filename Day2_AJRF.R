@@ -2,7 +2,7 @@
 library(tidyverse)
 
 ## Part 1: must be between min and max instances of the letter in the password
-dat <- read_delim("Day02/Day2Data.txt", 
+dat <- read_delim("Day2Data.txt", 
                   delim = c(" "), 
                   col_names = c("min_max", "letter", "password"),
                   col_types = "ccc")
