@@ -1,7 +1,7 @@
 ## Day 8
 library(tidyverse)
 
-dat <- read_delim("Day08/Day8Data.txt", delim = " ", col_names = c("op", "arg"), col_types = "ci")
+dat <- read_delim("Day8Data.txt", delim = " ", col_names = c("op", "arg"), col_types = "ci")
 dat <- dat %>% mutate(exec_order = NA_integer_)
 
 ## Run through in step order, as soon as repeat one we stop
