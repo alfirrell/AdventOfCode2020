@@ -1,7 +1,7 @@
 library(tidyverse)
 
 ## Method 2: self-join
-raw_vals <- read_csv("Day01/Day1Data.csv", col_types = "i", col_names = "val")
+raw_vals <- read_csv("Day1Data.csv", col_types = "i", col_names = "val")
 
 raw_vals %>% 
   mutate(val2 = 2020 - val,
