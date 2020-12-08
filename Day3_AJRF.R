@@ -3,7 +3,7 @@ library(tidyverse)
 ## Part 1
 
 ## Read in the data, and split into a matrix
-tree_pattern <- read_lines("Day03/Day3Data.txt") 
+tree_pattern <- read_lines("Day3Data.txt") 
 row_count <- length(tree_pattern)
 col_count <- str_length(tree_pattern[[1]])
 
