@@ -104,6 +104,9 @@ rules_parsed <-
 rules_parsed[9, "rule"] <- "42 | 42 8"
 rules_parsed[12, "rule"] <- "42 31 | 42 11 31"
 
+## Could do this with repeating Regex (i.e. rule 8 = (42)+)
+## but we'll try a little harder than that.
+
 rules_long <- 
   rules_parsed %>% 
   separate_rows(rule, sep = " ") %>% 
